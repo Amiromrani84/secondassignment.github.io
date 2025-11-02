@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../images/galaxy.png');
+}
+
+.groups {
+  margin-bottom: 15px; 
+}
+
+.container {
+    background: #c6c4c4;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #222;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #555;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #000000;
+}
+
+.class2, .optioninputs {
+    display: flex;
+    gap: 10px;
+}
+
+.class2 input {
+    flex: 1;
+}
+
+.optioninputs label {
+    display: flex;
+    align-items: center;
+}
+
+.comment {
+    font-size: 0.9em;
+    margin-top: 0px;
+    color: #555;
+}
+
+

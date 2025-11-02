@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <h2>personal information</h2>
+
+        <div class="groups">
+            <label>Name</label>
+            <div class="class2">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="groups">
+            <label>Mobile No.</label>
+            <input type="text" placeholder="+45" value="+45" pattern="\+45\s[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+            <div class="comment">Phone number must be in the format +45 12-34-56-78</div>
+        </div>
+
+        <div class="groups">
+            <label>Email</label>
+            <input type="email" required>
+        </div>
+
+        <div class="groups">
+            <label>How old are you?</label>
+            <input type="number" min="12" max="100" step="1" id="n1" name="age" required>
+        </div>
+
+        <div class="groups">
+            <label>Gender</label>
+            <div class="optioninputs">
+                <label><input type="radio" name="gender" required> Male</label>
+                <label><input type="radio" name="gender" required> Female</label>
+            </div>
+        </div>
+
+        <div class="groups">
+            <label>Your Photo</label>
+            <input type="file" required>
+        </div>
+        <div class="groups">
+            <label>City</label>
+            <input type="text" required>
+        </div>
+
+        <div class="groups">
+            <label>Address</label>
+            <textarea rows="3" required></textarea>
+        </div>
+        
+        <h2>Pet information</h2>
+
+        <div class="groups">
+            <label>Have you owned pets before?</label>
+            <div class="optioninputs">
+                <label><input type="radio" name="yes" required> yes</label>
+                <label><input type="radio" name="no" required> no</label>
+            </div>
+        </div>
+
+        <div class="groups">
+            <label>Numbers of animal you currently have</label>
+            <input type="number" placeholder="number" min="0" max="10" required>
+        </div>
+
+        <div class="groups">
+            <label>Type of animal you wish to have</label>
+            <select required>
+                <option value="">Select one</option>
+                <option>Dog</option>
+                <option>ٌCat</option>
+                <option>ٌfish</option>
+            </select>
+        </div>
+
+        <div class="groups">
+            <label>Preferred Gender</label>
+            <div class="optioninputs">
+                <label><input type="radio" name="Preferredgender" required> Male</label>
+                <label><input type="radio" name="Preferredgender" required> Female</label>
+                <label><input type="radio" name="Preferredgender" required> No Preference</label>
+            </div>
+        </div>
+
+        <div class="groups">
+            <label>Your daily activity</label>
+            <input id="activity" name="activity" type="range" min="0" max="10" value="5"
+            aria-valuemin="0" aria-valuemax="10" aria-valuenow="5" >
+        </div>
+
+        <div class="groups">
+            <label for="reason">Why do you want to adopt? <span aria-hidden="true">*</span></label>
+                <textarea id="reason" name="reason" rows="4" required maxlength="500"
+                placeholder="Please explain your motivation and plan for adoption."></textarea>
+        </div>
+
+        <div class="groups">
+            <label for="visitDate">Available Date for Home Visit</label>
+            <input id="visitDate" name="visitDate" type="date" />
+        </div>
+
+        <div class="groups">
+            <label for="photo">Upload Home Photo (optional)</label>
+            <input id="photo" name="photo" type="file" accept="image/*" />
+        </div>
+
+        <button type="submit"> Regester</button>
+    </div>
+</body>
+</html>
